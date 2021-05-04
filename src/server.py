@@ -6,7 +6,7 @@ from pymongo import MongoClient
 import certifi
 
 ##connect to db
-client = MongoClient("mongodb+srv://dawnhae:dawn12374@cluster0.hcrzr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority?ssl=true&ssl_cert_reqs=CERT_NONE", tlsCAFile=certifi.where())
+client = MongoClient("mongodb+srv://dawnhae:dawn12374@cluster0.hcrzr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", tlsCAFile=certifi.where())
 database = client["todo-list"]
 collection = database["todo"]
 
